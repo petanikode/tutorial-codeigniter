@@ -1,8 +1,8 @@
 ## Apa ini?
 
-Ini adalah repositori yang berisi source code dari tutorial Codeigniter
+Ini adalah repositori yang berisi source code tutorial Codeigniter
 dari petanikode.com. Repositori ini terbagi menjadi beberapa branch.
-Masing-masing branch berisi kode untuk tutorial.
+Masing-masing branch berisi kode untuk tiap tutorial.
 
 Untuk source code tutorial `#1` dan `#2` source codenya ada di branch `tutorial-3`,
 karena kemarin lupa dimasukin ke git :smile:.
