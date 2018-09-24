@@ -1,3 +1,5 @@
+![Tutorial Codeigniter untuk Pemula](https://wwww.petanikode.com/img/ci/db/add-success.png)
+
 ## Apa ini?
 
 Ini adalah repositori yang berisi source code tutorial Codeigniter
