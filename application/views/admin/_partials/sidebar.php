@@ -13,7 +13,7 @@
             <span>Products</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/products/new') ?>">New Product</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/products/add') ?>">New Product</a>
             <a class="dropdown-item" href="<?php echo site_url('admin/products') ?>">List Product</a>
         </div>
     </li>
