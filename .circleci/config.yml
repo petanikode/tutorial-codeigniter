@@ -10,7 +10,7 @@ jobs:
       - image: circleci/buildpack-deps:bionic-browsers-legacy
 
     steps:
-      - run: find . -exec curl -T {} ftp://$FTP_USER:$FTP_PASS@$FTP_HOST/htdocs/
+      - run: find . -exec curl -T {} ftp://$FTP_HOST/htdocs/ --user $FTP_USER:FTP_PASS \;
 
 general:
   branches:
