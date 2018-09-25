@@ -6,19 +6,22 @@ sudo: false
 addons:
   apt:
     packages:
-      - ncftp
+      - git-ftp
 
 branches:
   only:
     - deploy
 before_script:
-  - rm -rf .git
-  - rm .directory
-  - rm readme.md
-  - rm contributing.md
-  - rm license.txt
-  - rm .gitignore
-  - rm .editorconfig
-  - rm -rf tests
+  - rm -rf .git tests
+  - rm .directory .travis.yml .gitignore .editorconfig
+  - rm readme.md composer.json contributing.md license.txt
 
-script: ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" /htdocs .
+script: 
+  - git config git-ftp.url $FTP_HOST/htdocs
+  - git config git-ftp.user $FTP_USER
+  - git config git-ftp.password $FTP_PASS
+  - git ftp init
+  - git ftp catchup
+  - git ftp push
+
+  # - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" /htdocs .
