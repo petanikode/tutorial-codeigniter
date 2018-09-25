@@ -1,0 +1,15 @@
+env:
+  global:
+    - CI_ENV=production
+
+sudo: false
+addons:
+  apt:
+    packages:
+      - ncftp
+
+branches:
+  only:
+    - deploy
+
+script: ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" /htdocs .
