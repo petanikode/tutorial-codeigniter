@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.0.4
+      - image: circleci/node:8-browsers-legacy
 
     steps:
       - run: npm install --save-dev ftp-deploy
