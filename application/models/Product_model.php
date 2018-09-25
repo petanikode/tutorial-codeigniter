@@ -68,6 +68,7 @@ class Product_model extends CI_Model
 
     public function delete($id)
     {
+		$this->_deleteImage($id);
         return $this->db->delete($this->_table, array("product_id" => $id));
 	}
 	
@@ -88,6 +89,15 @@ class Product_model extends CI_Model
 		}
 		
 		return "default.jpg";
+	}
+
+	private function _deleteImage($id)
+	{
+		$product = $this->getById($id);
+		if ($product->image != "default.jpg") {
+			$filename = explode(".", $product->image)[0];
+			return array_map('unlink', glob(FCPATH."upload/product/$filename.*"));
+		}
 	}
 
 }
