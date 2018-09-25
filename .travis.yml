@@ -16,7 +16,7 @@ before_script:
   - rm .directory
   - rm readme.md
   - rm contributing.md
-  - rm licanse.txt
+  - rm license.txt
   - rm .gitignore
   - rm .editorconfig
   - rm -rf tests
