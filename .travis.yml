@@ -1,12 +1,6 @@
 language: php
 dist: trusty
-sudo: required
-
-php:
-  - '5.6'
- 
-services:
-  - mysql
+sudo: enabled
 
 branches:
   only:
