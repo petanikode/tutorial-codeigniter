@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - run: sudo apt install git-ftp
-      - run: ./deploy.sh
+      - run: .circleci/deploy.sh
       # - run: find . -exec curl -T {} ftp://$FTP_HOST/htdocs/ --user $FTP_USER:$FTP_PASS \;
 
 general:
