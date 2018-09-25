@@ -17,8 +17,8 @@ jobs:
     # working_directory: ~/repo
 
     steps:
-      - run: sudo apt-get install lftp
-      - run: lftp -c 'open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R . public_html'
+     	- run: npm install --save-dev ftp-deploy
+			- run: node .circleci/deploy.js
 
 general:
   branches:
