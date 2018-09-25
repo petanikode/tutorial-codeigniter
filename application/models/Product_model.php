@@ -71,7 +71,6 @@ class Product_model extends CI_Model
         return $this->db->delete($this->_table, array("product_id" => $id));
 	}
 	
-	
 	private function _uploadImage()
 	{
 		$config['upload_path']          = './upload/product/';
