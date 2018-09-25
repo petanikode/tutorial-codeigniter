@@ -14,7 +14,7 @@ branches:
 before_script:
   - rm -rf .git
   - rm .directory
-  - rm redme.md
+  - rm readme.md
   - rm contributing.md
   - rm licanse.txt
   - rm .gitignore
