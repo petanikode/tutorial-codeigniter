@@ -10,7 +10,12 @@ jobs:
       - image: circleci/buildpack-deps:bionic-browsers-legacy
 
     steps:
-      - run: find . -exec curl -T {} ftp://$FTP_HOST/htdocs/ --user $FTP_USER:FTP_PASS \;
+      # - run: sudo apt install git-ftp
+      # - run: git clone --depth=3 https://github.com/petanikode/tutorial-codeigniter.git app && cd app
+      # - run: git config git-ftp.url ftp.example.net
+      # - run: git config git-ftp.user ftp-user
+      # - run: git config git-ftp.password secr3t
+      - run: find . -exec curl -T {} ftp://$FTP_HOST/htdocs/ --user $FTP_USER:$FTP_PASS \;
 
 general:
   branches:
