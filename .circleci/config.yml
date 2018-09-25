@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - run: sudo apt-get install lftp
-			- run: lftp -c 'open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R . public_html'
+      - run: lftp -c 'open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R . public_html'
 
 general:
   branches:
