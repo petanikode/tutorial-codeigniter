@@ -23,7 +23,7 @@ script:
   - git add .
   - git commit -m "deploying"
   - git ftp init
-  - git ftp catchup
   - git ftp push
+  - git ftp catchup
 
   # - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" /htdocs .
