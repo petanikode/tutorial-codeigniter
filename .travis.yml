@@ -14,4 +14,4 @@ before_install:
   - sudo apt-get install lftp
 
 script: 
-	- lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R . public_html"
+	- "lftp -c \"open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R . public_html\""
