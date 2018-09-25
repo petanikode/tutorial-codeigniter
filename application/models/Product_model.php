@@ -43,7 +43,6 @@ class Product_model extends CI_Model
         $this->product_id = uniqid();
         $this->name = $post["name"];
 		$this->price = $post["price"];
-		$this->image = $this->_uploadImage();
         $this->description = $post["description"];
         $this->db->insert($this->_table, $this);
     }
@@ -54,12 +53,6 @@ class Product_model extends CI_Model
         $this->product_id = $post["id"];
         $this->name = $post["name"];
 		$this->price = $post["price"];
-		
-		if (!empty($_FILES["image"]["name"])) {
-            $this->image = $this->_uploadImage();
-        } else {
-            $this->image = $post["old_image"];
-		}
 
         $this->description = $post["description"];
         $this->db->update($this->_table, $this, array('product_id' => $post['id']));
