@@ -15,6 +15,7 @@ jobs:
       - run: git config git-ftp.url $FTP_HOST
       - run: git config git-ftp.user $FTP_USER
       - run: git config git-ftp.password $FTP_PASS
+      - run: git ftp init
       # - run: find . -exec curl -T {} ftp://$FTP_HOST/htdocs/ --user $FTP_USER:$FTP_PASS \;
 
 general:
