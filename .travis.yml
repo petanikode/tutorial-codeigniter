@@ -12,8 +12,8 @@ branches:
   only:
     - deploy
 before_script:
-  - rm -rf .git tests
-  - rm .directory .travis.yml .gitignore .editorconfig
+  - rm -rf tests .directory
+  - rm .travis.yml .editorconfig
   - rm readme.md composer.json contributing.md license.txt
 
 script: 
