@@ -20,9 +20,9 @@ script:
   - git config git-ftp.url $FTP_HOST/htdocs
   - git config git-ftp.user $FTP_USER
   - git config git-ftp.password $FTP_PASS
-  - git ftp init
   - git add .
   - git commit -m "deploying"
+  - git ftp init
   - git ftp catchup
   - git ftp push
 
