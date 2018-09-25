@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - run: npm install --save-dev ftp-deploy
-      - run: node .circleci/deploy.js
+      - run: node deploy
 
 general:
   branches:
