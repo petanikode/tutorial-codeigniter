@@ -11,5 +11,14 @@ addons:
 branches:
   only:
     - deploy
+before_script:
+  - rm -rf .git
+  - rm .directory
+  - rm redme.md
+  - rm contributing.md
+  - rm licanse.txt
+  - rm .gitignore
+  - rm .editorconfig
+  - rm -rf tests
 
 script: ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" /htdocs .
