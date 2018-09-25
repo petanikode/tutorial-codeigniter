@@ -13,6 +13,7 @@ karena kemarin lupa dimasukin ke git :smile:.
 2. Branch [tutorial-3](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-3): berisi source code tutorial 3.
 3. Branch [tutorial-4](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-4): berisi source code tutorial 4.
 4. Branch [tutorial-5](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-5): berisi source code tutorial 5.
+4. Branch [tutorial-6](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-5): berisi source code tutorial 6.
 
 Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/tutorial-codeigniter/issues) baru di repositori ini.
 
@@ -23,6 +24,7 @@ Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/
 - [Tutorial Codeigniter #3: Menggunakan Bootstrap pada Codeigniter](https://www.petanikode.com/codeigniter-bootstrap/)
 - [Tutorial Codeigniter #4: Membaut Template untuk Admin](https://www.petanikode.com/codeigniter-template/)
 - [Tutorial Codeigniter #5: Membuat CRUD Produk](https://www.petanikode.com/codeigniter-database/)
+- [Tutorial Codeigniter #6: Membuat Fitur Upload File](https://www.petanikode.com/codeigniter-upload/)
 - ...
 
 Tutorial berikutnya (insya'allah) akan ditambahkan.
