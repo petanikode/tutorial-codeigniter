@@ -10,6 +10,7 @@ jobs:
       - image: circleci/node:8-browsers-legacy
 
     steps:
+		  - run: npm init -y
       - run: npm install --save-dev ftp-deploy
       - run: node deploy
 
