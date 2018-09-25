@@ -43,6 +43,7 @@ class Product_model extends CI_Model
         $this->product_id = uniqid();
         $this->name = $post["name"];
 		$this->price = $post["price"];
+		$this->image = $this->_uploadImage();
         $this->description = $post["description"];
         $this->db->insert($this->_table, $this);
     }
@@ -53,6 +54,13 @@ class Product_model extends CI_Model
         $this->product_id = $post["id"];
         $this->name = $post["name"];
 		$this->price = $post["price"];
+		
+		
+		if (!empty($_FILES["image"]["name"])) {
+            $this->image = $this->_uploadImage();
+        } else {
+            $this->image = $post["old_image"];
+		}
 
         $this->description = $post["description"];
         $this->db->update($this->_table, $this, array('product_id' => $post['id']));
@@ -63,21 +71,5 @@ class Product_model extends CI_Model
         return $this->db->delete($this->_table, array("product_id" => $id));
 	}
 	
-	private function _uploadImage()
-	{
-		$config['upload_path']          = './upload/product/';
-		$config['allowed_types']        = 'gif|jpg|png';
-		$config['file_name']            = $this->product_id;
-		$config['max_size']             = 1024; // 1MB
-		// $config['max_width']            = 1024;
-		// $config['max_height']           = 768;
 
-		$this->load->library('upload', $config);
-
-		if ($this->upload->do_upload('image')) {
-			return $this->upload->data("file_name");
-		}
-		
-		return "default.jpg";
-	}
 }
