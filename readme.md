@@ -17,7 +17,7 @@ karena kemarin lupa dimasukin ke git :smile:.
 
 Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/tutorial-codeigniter/issues) baru di repositori ini.
 
-## Daftar Isi Tutorial:
+## Daftar Isi Tutorialnya Guys:
 
 - [Tutorial Codeigniter #1: Pengenalan Codeigniter untuk Pemula](https://www.petanikode.com/codeigniter-pemula/)
 - [Tutorial Codeigniter #2: Memahami Router dan Controller](https://www.petanikode.com/codeigniter-mvc/)
