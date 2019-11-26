@@ -1,4 +1,4 @@
-![Tutorial Codeigniter untuk Pemula](https://d33wubrfki0l68.cloudfront.net/0769dc50630e4306feeeb2becef7b06128f325bf/e20cc/img/ci/db/add-success.png)
+![Tutorial Codeigniter untuk Pemula](https://www.petanikode.com/img/ci/db/add-success.png)
 
 ## Apa ini?
 
@@ -16,6 +16,13 @@ karena kemarin lupa dimasukin ke git :smile:.
 4. Branch [tutorial-6](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-5): berisi source code tutorial 6.
 
 Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/tutorial-codeigniter/issues) baru di repositori ini.
+
+## Cara Menggunakan Source Code
+
+1. Download dulu,
+2. Ekstrak ke dalam folder `/var/www/html` atau `c:\xampp\htdocs\`.
+3. Ubah settingan user dan password database pada `application/config/databases.php`.
+4. Import database.sql melalui Phpmyadmin atau MySQL manajemen lainnya.
 
 ## Daftar Isi Tutorial:
 
