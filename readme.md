@@ -13,7 +13,8 @@ karena kemarin lupa dimasukin ke git :smile:.
 2. Branch [tutorial-3](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-3): berisi source code tutorial 3.
 3. Branch [tutorial-4](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-4): berisi source code tutorial 4.
 4. Branch [tutorial-5](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-5): berisi source code tutorial 5.
-4. Branch [tutorial-6](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-5): berisi source code tutorial 6.
+4. Branch [tutorial-6](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-6): berisi source code tutorial 6.
+4. Branch [tutorial-7](https://github.com/petanikode/tutorial-codeigniter/tree/tutorial-7): berisi source code tutorial 7.
 
 Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/tutorial-codeigniter/issues) baru di repositori ini.
 
