@@ -32,6 +32,7 @@ Jika ada saran dan masukan, silahkan buka [issue](https://github.com/petanikode/
 - [Tutorial Codeigniter #4: Membaut Template untuk Admin](https://www.petanikode.com/codeigniter-template/)
 - [Tutorial Codeigniter #5: Membuat CRUD Produk](https://www.petanikode.com/codeigniter-database/)
 - [Tutorial Codeigniter #6: Membuat Fitur Upload File](https://www.petanikode.com/codeigniter-upload/)
+- [Tutorial Codeigniter #7: Membuat Fitur Login untuk Admin](https://www.petanikode.com/codeigniter-login/)
 - ...
 
 Tutorial berikutnya (insya'allah) akan ditambahkan.
