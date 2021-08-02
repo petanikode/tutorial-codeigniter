@@ -2,6 +2,7 @@
 
 class Article_model_test extends TestCase
 {
+
 	public function setUp(): void
 	{
 		$this->resetInstance();
@@ -11,7 +12,6 @@ class Article_model_test extends TestCase
 
 	public function test_insert_new_article()
 	{
-
 		$article = [
 			'id' => uniqid('', true),
 			'title' => "hello world"
