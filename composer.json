@@ -10,6 +10,9 @@
 		"slack": "https://codeigniterchat.slack.com",
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
+	"scripts": {
+		"test": "phpunit -c application/tests/"
+	},
 	"require": {
 		"php": ">=5.3.7"
 	},
@@ -17,7 +20,8 @@
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
 	},
 	"require-dev": {
-		"mikey179/vfsStream": "1.1.*",
-		"phpunit/phpunit": "4.* || 5.*"
+		"mikey179/vfsstream": "1.1.*",
+		"phpunit/phpunit": "^9.5",
+		"kenjis/ci-phpunit-test": "^3.0"
 	}
 }

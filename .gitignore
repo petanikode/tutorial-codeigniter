@@ -31,3 +31,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /tests/results/
 
 user_guide/
+.phpunit.result.cache

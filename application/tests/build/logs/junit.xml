@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="5" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.142455">
+    <testsuite name="CodeIgniter Application Test Suite" tests="5" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.142455">
+      <testsuite name="Hello_test" file="/var/www/html/beritacoding/application/tests/controllers/Hello_test.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.015863">
+        <testcase name="test_index" class="Hello_test" classname="Hello_test" file="/var/www/html/beritacoding/application/tests/controllers/Hello_test.php" line="5" assertions="1" time="0.015863"/>
+      </testsuite>
+      <testsuite name="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" tests="4" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.126592">
+        <testcase name="test_insert_new_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="12" assertions="3" time="0.050670"/>
+        <testcase name="test_update_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="30" assertions="3" time="0.032599"/>
+        <testcase name="test_update_article_with_empty_id" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="58" assertions="3" time="0.023386"/>
+        <testcase name="test_delete_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="85" assertions="1" time="0.019937"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
