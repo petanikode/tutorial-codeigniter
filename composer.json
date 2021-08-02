@@ -11,7 +11,9 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"scripts": {
-		"test": "phpunit -c application/tests/"
+		"test": "phpunit -c application/tests/",
+		"migrate": "php public/index.php migrate",
+		"rollback": "php public/index.php migrate rollback"
 	},
 	"require": {
 		"php": ">=5.3.7"
