@@ -31,11 +31,15 @@ class Migration_Add_User extends CI_Migration
 		));
 		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
-		$this->dbforge->create_table('user');
+		if($this->dbforge->create_table('user')){
+			printf("✅ Table `user` created\n");
+		}
 	}
 
 	public function down()
 	{
-		$this->dbforge->drop_table('user');
+		if($this->dbforge->drop_table('user')){
+			printf("❌ Table `user` deleted\n");
+		}
 	}
 }

@@ -15,7 +15,10 @@ class Migration_Add_Article extends CI_Migration
 			'title' => array(
 				'type' => 'VARCHAR',
 				'constraint' => 128,
-				'null' => TRUE
+			),
+			'slug' => array(
+				'type' => 'VARCHAR',
+				'constraint' => 128,
 			),
 			'content' => array(
 				'type' => 'TEXT',
@@ -28,11 +31,15 @@ class Migration_Add_Article extends CI_Migration
 		));
 		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
-		$this->dbforge->create_table('article');
+		if ($this->dbforge->create_table('article')) {
+			printf("✅ Table `article` created\n");
+		}
 	}
 
 	public function down()
 	{
-		$this->dbforge->drop_table('article');
+		if ($this->dbforge->drop_table('article')) {
+			printf("❌ Table `article` deleted\n");
+		}
 	}
 }

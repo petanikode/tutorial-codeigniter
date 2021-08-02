@@ -23,11 +23,15 @@ class Migration_Add_Media extends CI_Migration
 		));
 		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
-		$this->dbforge->create_table('media');
+		if($this->dbforge->create_table('media')){
+			printf("✅ Table `media` created\n");
+		}
 	}
 
 	public function down()
 	{
-		$this->dbforge->drop_table('media');
+		if($this->dbforge->drop_table('media')){
+			printf("❌ Table `media` deleted\n");
+		}
 	}
 }

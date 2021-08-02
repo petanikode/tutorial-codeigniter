@@ -9,11 +9,12 @@ class Migrate extends CI_Controller
 		$this->load->library('migration');
 	}
 
+
 	public function index()
 	{
 
 		if (!is_cli()) {
-			show_error("Not Allowed", 403, "Error 403 Forbidden");
+			return show_error("Not Allowed", 403, "Error 403 Forbidden");
 		}
 
 
@@ -23,19 +24,21 @@ class Migrate extends CI_Controller
 			show_error($this->migration->error_string());
 		}
 
-		echo "✅ DB Migration current version: " . $migrate;
+		echo "Migrate to version: " . $migrate;
 	}
+
 
 	public function rollback($version = null)
 	{
 		if (!is_cli()) {
-			show_error("Not Allowed", 403, "Error 403 Forbidden");
+			return show_error("Not Allowed", 403, "Error 403 Forbidden");
 		}
 
 		$rollback = $this->migration->version($version);
 		if ($rollback === FALSE) {
 			show_error($this->migration->error_string());
 		}
+
 		echo "Rollback to version: " . $rollback;
 	}
 }
