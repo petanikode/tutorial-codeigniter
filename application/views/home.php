@@ -7,8 +7,8 @@
 
 <body>
 	<?php $this->load->view('_partials/navbar.php'); ?>
-	
-	<h1>Tidak ada artikel</h1>
+
+	<h1>Home Page</h1>
 
 	<?php $this->load->view('_partials/footer.php'); ?>
 </body>
