@@ -16,10 +16,40 @@
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* show Article */
+.article {
+	max-width: 740px;
+	margin: 4em auto;
+  padding: 0 2em;
+}
+
+.article .post-title {
+	font-weight: bolder;
+	font-family: sans;
+}
+
+.article .post-meta {
+	margin: 1em 0;
+	font-size: 0.8rem;
+	font-family: sans;
+  color: grey;
+}
+.article .post-body {
+	line-height: 1.6rem;
+}
+/* end show article */
+
 .footer {
 	font-family: sans-serif;
 	background-color: whitesmoke;
 	padding: 1em;
 	text-align: center;
 	border-top: 1px solid lightgray;
+}
+
+/* utilities */
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 2em;
 }

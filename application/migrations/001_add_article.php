@@ -25,11 +25,11 @@ class Migration_Add_Article extends CI_Migration
 				'null' => TRUE
 			),
 			'draft' => array(
-				'type' => 'TINYINT',
-				'default' => 1
+				'type' => "ENUM('true', 'false')",
+				'default' => 'true'
 			)
 		));
-		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
+		$this->dbforge->add_field('created_at DATETIME DEFAULT CURRENT_TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
 		if ($this->dbforge->create_table('article')) {
 			printf("✅ Table `article` created\n");

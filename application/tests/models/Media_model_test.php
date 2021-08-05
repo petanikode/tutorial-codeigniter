@@ -41,11 +41,10 @@ class Media_model_test extends TestCase
 		];
 
 		$this->media_model->insert($media);
-		$inserted_media = $this->media_model->find($id);
 		$this->media_model->delete($id);
-
+		
+		$inserted_media = $this->media_model->find($id);
 		$this->assertNull($inserted_media);
-		// $this->assertFileDoesNotExist($this->upload_path.$media['file_name']);
 	}
 	
 }

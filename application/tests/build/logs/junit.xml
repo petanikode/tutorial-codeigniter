@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="6" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="0.129546">
+    <testsuite name="CodeIgniter Application Test Suite" tests="6" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="0.129546">
+      <testsuite name="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" tests="4" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.091643">
+        <testcase name="test_insert_new_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="13" assertions="4" time="0.021013"/>
+        <testcase name="test_update_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="32" assertions="4" time="0.029465"/>
+        <testcase name="test_update_article_with_empty_id" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="63" assertions="3" time="0.018159"/>
+        <testcase name="test_delete_article" class="Article_model_test" classname="Article_model_test" file="/var/www/html/beritacoding/application/tests/models/Article_model_test.php" line="90" assertions="1" time="0.023006"/>
+      </testsuite>
+      <testsuite name="Media_model_test" file="/var/www/html/beritacoding/application/tests/models/Media_model_test.php" tests="2" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.037902">
+        <testcase name="test_insert_new_media" class="Media_model_test" classname="Media_model_test" file="/var/www/html/beritacoding/application/tests/models/Media_model_test.php" line="13" assertions="3" time="0.018358"/>
+        <testcase name="test_delete_media" class="Media_model_test" classname="Media_model_test" file="/var/www/html/beritacoding/application/tests/models/Media_model_test.php" line="34" assertions="1" time="0.019544"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
