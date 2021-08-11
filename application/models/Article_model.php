@@ -5,6 +5,16 @@ class Article_model extends CI_Model
 
 	private $_table = 'article';
 
+	public function get()
+	{
+		$query = $this->db->get($this->_table);
+		return $query->result();
+	}
+
+	public function count(){
+		return $this->db->count_all($this->_table);
+	}
+
 	public function get_publihed($limit = null, $offset = null)
 	{
 		if (!$limit && $offset) {
@@ -26,8 +36,6 @@ class Article_model extends CI_Model
 		return $query->row();
 	}
 
-	// ---
-
 	public function find($id)
 	{
 		if (!$id) {
@@ -40,7 +48,7 @@ class Article_model extends CI_Model
 
 	public function insert($article)
 	{
-		$this->db->insert($this->_table, $article);
+		return $this->db->insert($this->_table, $article);
 	}
 
 	public function update($article)
@@ -49,7 +57,7 @@ class Article_model extends CI_Model
 			return;
 		}
 
-		$this->db->update($this->_table, $article, ['id' => $article['id']]);
+		return $this->db->update($this->_table, $article, ['id' => $article['id']]);
 	}
 
 	public function delete($id)
@@ -58,6 +66,6 @@ class Article_model extends CI_Model
 			return;
 		}
 
-		$this->db->delete($this->_table, ['id' => $id]);
+		return $this->db->delete($this->_table, ['id' => $id]);
 	}
 }
