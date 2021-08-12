@@ -13,6 +13,7 @@ memahami dasar Codeigniter 3.
 5. [Memahami View dan Menggunakan CSS](https://www.petanikode.com/codeigniter-view/)
 6. [Menggunakan Model dan Database](https://www.petanikode.com/codeigniter-model/)
 7. [Membuat Halaman Admin](https://www.petanikode.com/codeigniter-admin/)
+8. [Validasi Data Form](https://www.petanikode.com/codeigniter-validation/)
 
 Tutorial lengkapnya dapat dibaca di:
 
