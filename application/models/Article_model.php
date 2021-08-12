@@ -5,13 +5,35 @@ class Article_model extends CI_Model
 
 	private $_table = 'article';
 
+	public function rules()
+	{
+		return [
+			[
+				'field' => 'title',
+				'label' => 'Title',
+				'rules' => 'required|max_length[128]'
+			],
+			[
+				'field' => 'draft',
+				'label' => 'Draft',
+				'rules' => 'required|in_list[true,false]'
+			],
+			[
+				'field' => 'content',
+				'label' => 'Content',
+				'rules' => '' // <-- rules dikosongkan
+			]
+		];
+	}
+
 	public function get()
 	{
 		$query = $this->db->get($this->_table);
 		return $query->result();
 	}
 
-	public function count(){
+	public function count()
+	{
 		return $this->db->count_all($this->_table);
 	}
 
