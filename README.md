@@ -1,8 +1,8 @@
-# BeritaCoding v0.0.1
+# BeritaCoding v1.0.0
 
-Repository ini merupakan source code untuk tutorial Codeigniter di Petani Kode.
 Aplikasi BeritaCoding adalah sebauh aplikasi portal berita sederhana untuk
-memahami dasar Codeigniter 3.
+memahami dasar Codeigniter 3. Repository ini merupakan source code untuk 
+tutorial Codeigniter di Petani Kode.
 
 # List Tutorial
 
@@ -18,3 +18,18 @@ memahami dasar Codeigniter 3.
 Tutorial lengkapnya dapat dibaca di:
 
 - [:book: List Tutorial Codeigniter 3 untuk Pemula](https://www.petanikode.com/tutorial/codeigniter/)
+
+# Menjalankan Proyek
+
+Lakukan instalasi semua depedencies yang dibutuhkan dengan composer. Ketik
+perintah berikut pada root direktori project.
+
+```bash
+composer install
+```
+
+Kemudian lakukan migrasi database dengan perintah:
+
+```bash
+composer migrate
+```

@@ -11,6 +11,7 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"scripts": {
+		"serve": "php -S localhost:8080 -t public",
 		"test": "phpunit -c application/tests/",
 		"migrate": "php public/index.php migrate",
 		"rollback": "php public/index.php migrate rollback"
