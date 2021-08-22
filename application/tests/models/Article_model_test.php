@@ -25,7 +25,7 @@ class Article_model_test extends TestCase
 		$this->assertEquals($article['id'], $inserted_article->id);
 		$this->assertEquals($article['slug'], $inserted_article->slug);
 		$this->assertEquals($article['title'], $inserted_article->title);
-		$this->assertEquals('TRUE', $inserted_article->draft);
+		$this->assertEquals('true', $inserted_article->draft);
 		$this->article_model->delete($article['id']);
 	}
 

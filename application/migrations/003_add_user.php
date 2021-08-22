@@ -18,28 +18,42 @@ class Migration_Add_User extends CI_Migration
 			),
 			'email' => array(
 				'type' => 'VARCHAR',
-				'constraint' => 32
+				'constraint' => 64
 			),
-			'avatar' => array(
+			'username' => array(
 				'type' => 'VARCHAR',
-				'constraint' => 32,
-				'default' => 'default_avatar.png'
+				'constraint' => 64
 			),
 			'password' => array(
 				'type' => 'VARCHAR',
 				'constraint' => 255
+			),
+			'avatar' => array(
+				'type' => 'VARCHAR',
+				'constraint' => 32,
+				'default' => null
 			)
 		));
 		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
+		$this->dbforge->add_field('last_login TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
-		if($this->dbforge->create_table('user')){
+		if ($this->dbforge->create_table('user')) {
+			$first_data = [
+				'id' => uniqid('', true),
+				'name' => 'Administrator',
+				'email' => 'admin@mail.com',
+				'username' => 'admin',
+				'password' => password_hash('admin', PASSWORD_DEFAULT)
+			];
+			$this->db->insert('user', $first_data);
 			printf("✅ Table `user` created\n");
 		}
+		
 	}
 
 	public function down()
 	{
-		if($this->dbforge->drop_table('user')){
+		if ($this->dbforge->drop_table('user')) {
 			printf("❌ Table `user` deleted\n");
 		}
 	}
