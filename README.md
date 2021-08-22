@@ -8,13 +8,13 @@ tutorial Codeigniter di Petani Kode.
 
 1. [Pengenalan Codeigniter untuk Pemula](https://www.petanikode.com/codeigniter-pemula/)
 2. [Persiapan dan Instalasi Codeigniter](https://www.petanikode.com/codeigniter-install/)
-3. [Memahami Konsep MVC di Codeigniter](https://www.petanikode.com/codeigniter-mvc/) (source code: [04-routing](https://github.com/petanikode/tutorial-codeigniter/tree/04-routing))
-4. [Memahami Controller](https://www.petanikode.com/codeigniter-controller/) (source code: [04-routing](https://github.com/petanikode/tutorial-codeigniter/tree/04-routing))
-5. [Memahami View dan Menggunakan CSS](https://www.petanikode.com/codeigniter-view/) (source code: [05-view-dan-css](https://github.com/petanikode/tutorial-codeigniter/tree/05-view-dan-css))
-6. [Menggunakan Model dan Database](https://www.petanikode.com/codeigniter-model/) (source code: [06-model](https://github.com/petanikode/tutorial-codeigniter/tree/06-model))
-7. [Membuat Halaman Admin](https://www.petanikode.com/codeigniter-admin/) (source code: [07-admin](https://github.com/petanikode/tutorial-codeigniter/tree/07-admin))
-8. [Validasi Data Form](https://www.petanikode.com/codeigniter-validation/) (source code: [08-login](https://github.com/petanikode/tutorial-codeigniter/tree/08-validation))
-9. [Membuat FItur Login](https://www.petanikode.com/codeigniter-login/) (source code: [09-login](https://github.com/petanikode/tutorial-codeigniter/tree/09-login))
+3. [Memahami Konsep MVC di Codeigniter](https://www.petanikode.com/codeigniter-mvc/) (source code: [04-routing](github.com/petanikode/tutorial-codeigniter/tree/04-routing))
+4. [Memahami Controller](https://www.petanikode.com/codeigniter-controller/) (source code: [04-routing](github.com/petanikode/tutorial-codeigniter/tree/04-routing))
+5. [Memahami View dan Menggunakan CSS](https://www.petanikode.com/codeigniter-view/) (source code: [05-view-dan-css](github.com/petanikode/tutorial-codeigniter/tree/05-view-dan-css))
+6. [Menggunakan Model dan Database](https://www.petanikode.com/codeigniter-model/) (source code: [06-model](github.com/petanikode/tutorial-codeigniter/tree/06-model))
+7. [Membuat Halaman Admin](https://www.petanikode.com/codeigniter-admin/) (source code: [07-admin](github.com/petanikode/tutorial-codeigniter/tree/07-admin))
+8. [Validasi Data Form](https://www.petanikode.com/codeigniter-validation/) (source code: [08-login](github.com/petanikode/tutorial-codeigniter/tree/08-validation))
+9. [Membuat FItur Login](https://www.petanikode.com/codeigniter-login/) (source code: [09-login](github.com/petanikode/tutorial-codeigniter/tree/09-login))
 
 Tutorial lengkapnya dapat dibaca di:
 
