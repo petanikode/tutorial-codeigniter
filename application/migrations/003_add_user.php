@@ -36,6 +36,7 @@ class Migration_Add_User extends CI_Migration
 		));
 		$this->dbforge->add_field('created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
 		$this->dbforge->add_field('last_login TIMESTAMP');
+		$this->dbforge->add_field('password_updated_at TIMESTAMP CURRENT_TIMESTAMP');
 		$this->dbforge->add_key('id', TRUE);
 		if ($this->dbforge->create_table('user')) {
 			$first_data = [

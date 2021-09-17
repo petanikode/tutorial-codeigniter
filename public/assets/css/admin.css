@@ -127,6 +127,10 @@ input:focus, textarea:focus {
 	font-family: sans-serif;
 }
 
+.card-body {
+	padding: 1em 0;
+}
+
 /* Button */
 .button {
 	background-color: #e7e7e7;
@@ -169,6 +173,9 @@ input:focus, textarea:focus {
 /* Text */
 .txt-green {
 	color: #4caf50;
+}
+.txt-red {
+	color: #be1616;
 }
 
 .txt-grey {
