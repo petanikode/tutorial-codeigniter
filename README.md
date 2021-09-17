@@ -6,8 +6,8 @@ tutorial Codeigniter di Petani Kode.
 
 # List Tutorial
 
-1. [Pengenalan Codeigniter untuk Pemula](https://www.petanikode.com/codeigniter-pemula/)
-2. [Persiapan dan Instalasi Codeigniter](https://www.petanikode.com/codeigniter-install/)
+1. [Pengenalan Codeigniter untuk Pemula](https://www.petanikode.com/codeigniter-pemula/) (source code: n/a)
+2. [Persiapan dan Instalasi Codeigniter](https://www.petanikode.com/codeigniter-install/) (Source code: [first commit](https://github.com/petanikode/tutorial-codeigniter/tree/60562e67a920d3ca5d358d9c98bfca8e84fa102d))
 3. [Memahami Konsep MVC di Codeigniter](https://www.petanikode.com/codeigniter-mvc/) (source code: [04-routing](https://github.com/petanikode/tutorial-codeigniter/tree/04-routing))
 4. [Memahami Controller](https://www.petanikode.com/codeigniter-controller/) (source code: [04-routing](https://github.com/petanikode/tutorial-codeigniter/tree/04-routing))
 5. [Memahami View dan Menggunakan CSS](https://www.petanikode.com/codeigniter-view/) (source code: [05-view-dan-css](https://github.com/petanikode/tutorial-codeigniter/tree/05-view-dan-css))
