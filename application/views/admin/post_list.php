@@ -20,8 +20,8 @@
 				<thead>
 					<tr>
 						<th>Title</th>
-						<th style="width: 15%;" class="txt-center">Status</th>
-						<th style="width: 25%;" class="txt-center">Action</th>
+						<th style="width: 15%;" class="text-center">Status</th>
+						<th style="width: 25%;" class="text-center">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -30,12 +30,12 @@
 					<tr>
 						<td>
 							<div><?= $article->title ?></div>
-							<div class="txt-grey"><small><?= $article->created_at ?><small></div>
+							<div class="text-gray"><small><?= $article->created_at ?><small></div>
 						</td>
 						<?php if($article->draft === 'true'): ?>
-							<td class="txt-center txt-grey">Draft</td>
+							<td class="text-center text-gray">Draft</td>
 						<?php else: ?>
-							<td class="txt-center txt-green">Published</td>
+							<td class="text-center text-green">Published</td>
 						<?php endif ?>
 						<td>
 							<div class="action">

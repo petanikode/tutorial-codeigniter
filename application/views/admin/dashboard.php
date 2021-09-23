@@ -13,13 +13,13 @@
 			<h1>Overview</h1>
 		
 			<div style="display:flex; gap: 1em">
-				<div class="card txt-center" style="width: 100px;">
+				<div class="card text-center" style="width: 100px;">
 				<h2>
 					<?= $article_count ?>
 				</h2>
 				<p><a href="<?= site_url('admin/post') ?>">Artikel</a></p>
 			</div>
-				<div class="card txt-center" style="width: 100px;">
+				<div class="card text-center" style="width: 100px;">
 				<h2>
 					<?= $feedback_count ?>
 				</h2>

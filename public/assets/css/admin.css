@@ -171,17 +171,17 @@ input:focus, textarea:focus {
 }
 
 /* Text */
-.txt-green {
+.text-green {
 	color: #4caf50;
 }
-.txt-red {
+.text-red {
 	color: #be1616;
 }
 
-.txt-grey {
+.text-gray {
 	color: grey;
 }
 
-.txt-center {
+.text-center {
 	text-align: center;
 }

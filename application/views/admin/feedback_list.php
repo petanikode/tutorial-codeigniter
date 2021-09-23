@@ -16,9 +16,9 @@
 			<div class="card">
 				<div class="card-header">
 					<div>
-						<b><?= $feedback->name ?></b> <small class="txt-grey"><?= $feedback->email ?></small>
+						<b><?= $feedback->name ?></b> <small class="text-gray"><?= $feedback->email ?></small>
 					</div>
-					<div><small class="txt-grey"><?= $feedback->created_at ?></small></div>
+					<div><small class="text-gray"><?= $feedback->created_at ?></small></div>
 				</div>
 				<p><?= $feedback->message ?></p>
 				<a href="#" 

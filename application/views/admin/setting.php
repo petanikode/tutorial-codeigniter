@@ -16,7 +16,7 @@
 				<div class="card-header">
 					<b>Avatar</b>
 					<div style="display: flex; gap: 1em">
-						<a href="<?= site_url('admin/setting/remove_avatar') ?>" class="txt-red">Remove Avatar</a>
+						<a href="<?= site_url('admin/setting/remove_avatar') ?>" class="text-red">Remove Avatar</a>
 						<a href="<?= site_url('admin/setting/upload_avatar') ?>">Change Avatar</a>
 					</div>
 				</div>
@@ -35,9 +35,9 @@
 					<a href="<?= site_url('admin/setting/edit_profile') ?>">Edit Profile</a>
 				</div>
 				<div class="card-body">
-					Name: <span class="txt-grey"><?= html_escape($current_user->name) ?></span>
+					Name: <span class="text-gray"><?= html_escape($current_user->name) ?></span>
 					<br>
-					Email: <span class="txt-grey"><?= html_escape($current_user->email) ?></span>
+					Email: <span class="text-gray"><?= html_escape($current_user->email) ?></span>
 				</div>
 			</div>
 			<div class="card">
@@ -46,9 +46,9 @@
 					<a href="<?= site_url('admin/setting/edit_password') ?>">Edit Password</a>
 				</div>
 				<div class="card-body">
-					Your Password: <span class="txt-grey">******</span>
+					Your Password: <span class="text-gray">******</span>
 					<br>
-					Last Changed: <span class="txt-grey"><?= $current_user->password_updated_at ?></span>
+					Last Changed: <span class="text-gray"><?= $current_user->password_updated_at ?></span>
 				</div>
 			</div>
 
