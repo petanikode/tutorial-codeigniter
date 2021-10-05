@@ -3,6 +3,7 @@
 
 <head>
 	<?php $this->load->view('admin/_partials/head.php') ?>
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
 
 				<div>
 					<label for="content">Konten</label>
-					<textarea name="content" cols="30" rows="10" placeholder="Tuliskan isi pikiranmu..."><?= set_value('content') ?></textarea>
+					<input type="hidden" name="content" value="<?= set_value('content') ?>">
+					<div id="editor" style="min-height: 160px;"><?= set_value('content') ?></div>
 				</div>
 
 				<div>
@@ -36,6 +38,26 @@
 			</form>
 
 			<?php $this->load->view('admin/_partials/footer.php') ?>
+			<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+			<script>
+				var quill = new Quill('#editor', {
+					theme: 'snow',
+					modules: {
+						toolbar: [
+								[{ header: [1, 2, 3, 4, 5, 6, false] }],
+								[{ font: [] }],
+								["bold", "italic"],
+								["link", "blockquote", "code-block", "image"],
+								[{ list: "ordered" }, { list: "bullet" }],
+								[{ script: "sub" }, { script: "super" }],
+								[{ color: [] }, { background: [] }],
+						]
+				},
+				});
+				quill.on('text-change', function(delta, oldDelta, source) {
+					document.querySelector("input[name='content']").value = quill.root.innerHTML;
+				});
+			</script>
 		</div>
 	</main>
 </body>
