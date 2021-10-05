@@ -17,6 +17,7 @@ tutorial Codeigniter di Petani Kode.
 9. [Membuat FItur Login](https://www.petanikode.com/codeigniter-login/) (Source Code: [09-login](https://github.com/petanikode/tutorial-codeigniter/tree/09-login))
 10. [Membuat FItur Setting Profile](https://www.petanikode.com/codeigniter-setting/) (Source Code: [10-setting](https://github.com/petanikode/tutorial-codeigniter/tree/10-setting))
 11. [Membuat Fitur Upload Avatar](https://www.petanikode.com/codeigniter-upload/) (Source Code: [11-upload](https://github.com/petanikode/tutorial-codeigniter/tree/11-upload))
+12. [Menambahkan Editor Artikel](http://www.petanikode.com/codeigniter-quilljs/) (Source Code: [12-editor](https://github.com/petanikode/tutorial-codeigniter/tree/12-editor))
 
 Tutorial lengkapnya dapat dibaca di:
 
