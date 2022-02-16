@@ -14,6 +14,12 @@
 
 			<div class="toolbar">
 				<a href="<?= site_url('admin/post/new') ?>" class="button button-primary" role="button">+ Tulis Artikel</a>
+				<div>
+					<form action="" method="GET" style="flex-direction: row; width:360px">
+						<input type="search" name="keyword" placeholder="Cari artikel" value="<?= html_escape($keyword) ?>">
+						<input type="submit" value="Cari" class="button" style="width: 32%;">
+					</form>
+				</div>
 			</div>
 
 			<table class="table">
@@ -25,32 +31,28 @@
 					</tr>
 				</thead>
 				<tbody>
-				
-					<?php foreach($articles as $article): ?>
-					<tr>
-						<td>
-							<div><?= $article->title ?></div>
-							<div class="text-gray"><small><?= $article->created_at ?><small></div>
-						</td>
-						<?php if($article->draft === 'true'): ?>
-							<td class="text-center text-gray">Draft</td>
-						<?php else: ?>
-							<td class="text-center text-green">Published</td>
-						<?php endif ?>
-						<td>
-							<div class="action">
-								<a href="<?= site_url('article/'.$article->slug) ?>" class="button button-small" target="_blank" role="button">Preview</a>
-								<a href="<?= site_url('admin/post/edit/'.$article->id) ?>" class="button button-small" role="button">Edit</a>
-								<a href="#" 
-									data-delete-url="<?= site_url('admin/post/delete/'.$article->id) ?>" 
-									class="button button-small button-danger" 
-									role="button"
-									onclick="deleteConfirm(this)">Delete</a>
-							</div>
-						</td>
-					</tr>
+
+					<?php foreach ($articles as $article) : ?>
+						<tr>
+							<td>
+								<div><?= $article->title ?></div>
+								<div class="text-gray"><small><?= $article->created_at ?><small></div>
+							</td>
+							<?php if ($article->draft === 'true') : ?>
+								<td class="text-center text-gray">Draft</td>
+							<?php else : ?>
+								<td class="text-center text-green">Published</td>
+							<?php endif ?>
+							<td>
+								<div class="action">
+									<a href="<?= site_url('article/' . $article->slug) ?>" class="button button-small" target="_blank" role="button">Preview</a>
+									<a href="<?= site_url('admin/post/edit/' . $article->id) ?>" class="button button-small" role="button">Edit</a>
+									<a href="#" data-delete-url="<?= site_url('admin/post/delete/' . $article->id) ?>" class="button button-small button-danger" role="button" onclick="deleteConfirm(this)">Delete</a>
+								</div>
+							</td>
+						</tr>
 					<?php endforeach ?>
-					
+
 				</tbody>
 			</table>
 
@@ -60,7 +62,7 @@
 
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
-		function deleteConfirm(event){
+		function deleteConfirm(event) {
 			Swal.fire({
 				title: 'Delete Confirmation!',
 				text: 'Are you sure to delete the item?',
@@ -70,14 +72,14 @@
 				confirmButtonText: 'Yes Delete',
 				confirmButtonColor: 'red'
 			}).then(dialog => {
-				if(dialog.isConfirmed){
+				if (dialog.isConfirmed) {
 					window.location.assign(event.dataset.deleteUrl);
 				}
 			});
 		}
 	</script>
 
-	<?php if($this->session->flashdata('message')): ?>
+	<?php if ($this->session->flashdata('message')) : ?>
 		<script>
 			const Toast = Swal.mixin({
 				toast: true,
