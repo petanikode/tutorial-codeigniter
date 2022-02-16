@@ -68,6 +68,17 @@ class Article_model extends CI_Model
 		return $query->row();
 	}
 
+	public function search($keyword)
+	{
+		if(!$keyword){
+			return null;
+		}
+		$this->db->like('title', $keyword);
+		$this->db->or_like('content', $keyword);
+		$query = $this->db->get($this->_table);
+		return $query->result();
+	}
+
 	public function insert($article)
 	{
 		return $this->db->insert($this->_table, $article);
