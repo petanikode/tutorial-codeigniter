@@ -26,9 +26,9 @@ class Article_model extends CI_Model
 		];
 	}
 
-	public function get()
+	public function get($limit = null, $offset = null)
 	{
-		$query = $this->db->get($this->_table);
+		$query = $this->db->get($this->_table, $limit, $offset);
 		return $query->result();
 	}
 
@@ -37,7 +37,13 @@ class Article_model extends CI_Model
 		return $this->db->count_all($this->_table);
 	}
 
-	public function get_publihed($limit = null, $offset = null)
+	public function get_published_count()
+	{
+		$query = $this->db->get_where($this->_table, ['draft' => 'FALSE']);
+		return $query->num_rows();
+	}
+
+	public function get_published($limit = null, $offset = null)
 	{
 		if (!$limit && $offset) {
 			$query = $this->db

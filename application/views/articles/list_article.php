@@ -20,6 +20,8 @@
 				</li>
 			<?php endforeach ?>
 		</ul>
+
+		<?=  $this->pagination->create_links(); ?>
 	</div>
 
 	<?php $this->load->view('_partials/footer.php'); ?>
