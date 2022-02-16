@@ -19,6 +19,7 @@ tutorial Codeigniter di Petani Kode.
 11. [Membuat Fitur Upload Avatar](https://www.petanikode.com/codeigniter-upload/) (Source Code: [11-upload](https://github.com/petanikode/tutorial-codeigniter/tree/11-upload))
 12. [Menambahkan Editor Artikel](http://www.petanikode.com/codeigniter-quilljs/) (Source Code: [12-editor](https://github.com/petanikode/tutorial-codeigniter/tree/12-editor))
 13. [Membuat FItur Pencarian](https://www.petanikode.com/codeigniter-search/) (Source Code: [13-search](https://github.com/petanikode/tutorial-codeigniter/tree/13-search))
+13. [Membuat FItur Pagination](https://www.petanikode.com/codeigniter-pagination/) (Source Code: [14-pagination](https://github.com/petanikode/tutorial-codeigniter/tree/14-pagination))
 
 Tutorial lengkapnya dapat dibaca di:
 
